@@ -132,10 +132,7 @@ nav ul li a:active {
 .main-top {
     width: 100%;
     height: 4rem;
-    /* flex-flow: rel; */
-    /* background-color: rgb(32, 196, 103); */
     display: flex;
-    /* font-size: large; */
     justify-content: center;
     align-items: center;
 }
@@ -143,8 +140,7 @@ nav ul li a:active {
 .main-down {
     width: 100%;
     height: 120vh;
-    column-gap: 2rem;
-    /* margin-top: 4rem; */
+    column-gap: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +151,6 @@ nav ul li a:active {
     width: 25%;
     height: 100%;
     background-color: var(--light_bkg_color);
-    /* background-color: red; */
     box-shadow: 2px 2px 10px 1px rgb(124, 120, 120);
     display: flex;
     flex-direction: column;
@@ -165,12 +160,11 @@ nav ul li a:active {
     width: 60%;
     height: 100%;
     background-color: var(--light_bkg_color);
-    /* background-color: green; */
     box-shadow: 2px 2px 10px 1px rgb(124, 120, 120);
 }
 
 .personal-img {
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -179,23 +173,29 @@ nav ul li a:active {
 }
 
 .personal-detail {
-    width: auto;
+    width: 85%;
     height: auto;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 5%;
 }
 
 table {
+    width: 100%;
     margin: 1rem;
+}
+
+table tr {
+    width: 100%;
+    height: auto;
 }
 
 td.title {
     width: 30%;
     height: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: small;
+    font-size: small;
     font-weight: bold;
     border-bottom: 1px solid rgb(148, 146, 146);
 }
@@ -204,7 +204,7 @@ td.desc {
     width: 50%;
     height: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: small;
+    font-size: small;
     border-bottom: 1px solid rgb(148, 146, 146);
 }
 
@@ -233,7 +233,6 @@ td.desc {
     height: 100%;
     flex-direction: column;
     flex-grow: 2;
-    /* background-color: green; */
 }
 
 .tele-and-email,
@@ -264,15 +263,12 @@ td.desc {
     width: 100%;
     height: 100%;
     display: flex;
-    /* background-color: rgb(54, 134, 213); */
 }
 
 .img-block,
 .social-img-block {
     width: 30%;
     height: 100%;
-    /* gap: 1rem; */
-    /* to center image in the father element*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,7 +301,6 @@ td.desc {
 .detail-detail {
     width: auto;
     height: auto;
-    /* flex-direction: column; */
 }
 
 /**********************************
@@ -448,11 +443,11 @@ td.desc {
         /* set div center horizontally
             top,bottom: 10px;
             left,right: automatic justify*/
-        margin: 10px auto;
+    margin: 10px auto;
     display: grid;
     justify-content: center;
     align-items: center;
-        grid-template-columns: 30% 50% 10%;
+    grid-template-columns: 30% 50% 10%;
     grid-template-rows: 25% 25% 25% 15%;
     row-gap: 1rem;
     box-shadow: 2px 2px 10px 1px rgb(124, 120, 120);
@@ -515,10 +510,10 @@ td.desc {
 }
 
 .grid-item-hobby>p {
-    width: 400px;
-    align-items: left;
+    width: auto;
+        /* align-items: left; */
     justify-content: left;
-    line-height: 130%;
+    /* line-height: 130%; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -526,9 +521,9 @@ td.desc {
 *  style for image & icon
 ***********************************/
 /* for round images */
-.img_round {
-    width: 120px;
-        height: 120px;
+.grid-item-hobby>img {
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
 }
 /* for square images */
