@@ -1,0 +1,585 @@
+body {
+    margin: 0;
+    padding: 0;
+    --light_bkg_color: rgb(234, 231, 231);
+    --dark_bkg_color: #e4dfdf;
+}
+
+.space-from-top {
+    margin-top: 100px;
+}
+
+.space-to-footer {
+    margin-bottom: 50px;
+}
+
+.bk-color-light {
+    background-color: var(--light_bkg_color);
+}
+
+.bk-color-dark {
+    background-color: var(--dark_bkg_color);
+}
+
+div {
+    width: 20px;
+    height: 100px;
+}
+
+/* set icon size in header navigation area */
+#icon_header {
+    width: 16px;
+    height: 16px;
+}
+
+/**********************************
+*  style for header area in all pages
+***********************************/
+.header-block {
+    width: 100%;
+    height: 4rem;
+    /* position: fixed; */
+    /* position: sticky; */
+        top: 100px;
+    box-shadow: 2px 2px 10px 1px rgb(124, 120, 120);
+}
+
+/**********************************
+* style for nav in all pages
+***********************************/
+nav ul {
+    list-style-type: none;
+    height: 60px;
+    margin: 0px;
+    /* to be a flexbox*/
+    display: flex;
+    flex-direction: row;
+    /* set flexbox child element horizontal center*/
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline;
+}
+
+nav ul a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(93, 168, 12);
+    display: inline;
+        justify-content: center;
+        align-items: center;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+    color: darkgray;
+}
+
+nav ul li a:active {
+    /* color: red; */
+    background-color: rgb(141, 181, 147);
+}
+
+/**********************************
+*  style for list
+***********************************/
+.hobby_link_block {
+    width: 100%;
+    height: auto;
+}
+
+.hobby_link_block ul a {
+    text-decoration: underline;
+    color: black;
+}
+
+.hobby_link_block ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hobby_link_block ul a:hover {
+    text-decoration: underline;
+    color: rgb(240, 29, 29);
+}
+
+.hobby_link_block ul li a.active {
+    color: red;
+    background-color: red;
+}
+
+/**********************************
+*  style for main area in all pages
+***********************************/
+.body-flex-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-top {
+    width: 100%;
+    height: 4rem;
+    /* flex-flow: rel; */
+    /* background-color: rgb(32, 196, 103); */
+    display: flex;
+    /* font-size: large; */
+    justify-content: center;
+    align-items: center;
+}
+
+.main-down {
+    width: 100%;
+    height: 120vh;
+    column-gap: 2rem;
+    /* margin-top: 4rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.main-left {
+    width: 25%;
+    height: 100%;
+    background-color: var(--light_bkg_color);
+    /* background-color: red; */
+    box-shadow: 2px 2px 10px 1px rgb(124, 120, 120);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-right {
+    width: 60%;
+    height: 100%;
+    background-color: var(--light_bkg_color);
+    /* background-color: green; */
+    box-shadow: 2px 2px 10px 1px rgb(124, 120, 120);
+}
+
+.personal-img {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.personal-detail {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+table {
+    margin: 1rem;
+}
+
+td.title {
+    width: 30%;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(148, 146, 146);
+}
+
+td.desc {
+    width: 50%;
+    height: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+    border-bottom: 1px solid rgb(148, 146, 146);
+}
+
+/**********************************
+*  style for footer area in all pages
+***********************************/
+.footer {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgray;
+}
+
+.footer-left {
+    height: 100%;
+    /* to center image in the father element*/
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lightgray;
+}
+
+.footer-right {
+    height: 100%;
+    flex-direction: column;
+    flex-grow: 2;
+    /* background-color: green; */
+}
+
+.tele-and-email,
+.social-contact {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.social-contact {
+    border-top: 1px solid lightgray;
+}
+
+.tele-block {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border-right: 1px solid lightgray;
+}
+
+.email-block {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.social-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* background-color: rgb(54, 134, 213); */
+}
+
+.img-block,
+.social-img-block {
+    width: 30%;
+    height: 100%;
+    /* gap: 1rem; */
+    /* to center image in the father element*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* set specific width for img block in social block */
+.social-img-block {
+    width: 15%;
+}
+
+.tele-detail,
+.email-detail {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.social-detail {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.detail-head,
+.detail-detail {
+    width: auto;
+    height: auto;
+    /* flex-direction: column; */
+}
+
+/**********************************
+*  style for CONTACT US page
+***********************************/
+.grid-block {
+    width: 100%;
+    height: 80%;
+    padding-top: 4rem;
+    /* display: grid; */
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    width: 80%;
+    height: 70%;
+    /* set div center horizontally
+    top,bottom: 10px;
+    left,right: automatic justify*/
+    margin: 10px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 55%;
+    grid-template-rows: 20% 40% 20%;
+    gap: 1rem;
+    padding: 10px;
+    box-shadow: 2px 2px 10px 1px rgb(124, 120, 120);
+}
+
+.grid-item {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* text-align: center; */
+    /* background-color: gold; */
+    /* outline: 1px solid rgba(0, 0, 0, 0.8); */
+    /* border: 3px solid black; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-size: cover;
+}
+
+/* contact image */
+.grid-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+}
+
+/* Call & Email */
+.grid-item:nth-child(2) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+/* "Contact us" title */
+.grid-item:nth-child(3) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+/* "Form-Name-label" label */
+.grid-item:nth-child(4) {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+}
+
+.flex-box-form {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-box-form div,
+.flex-textarea {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    text-align: end;
+    margin: 0.5rem;
+    padding: 0.3rem;
+}
+
+.grid-item>div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.flex-box-form div label,
+.flex-textarea label {
+    width: auto;
+    height: 100%;
+    flex-grow: 1;
+    justify-content: end;
+    align-items: center;
+    margin: 0.6rem;
+}
+
+.flex-box-form div input,
+.flex-textarea textarea {
+    height: 100%;
+    flex-grow: 2;
+    justify-content: left;
+    align-items: center;
+}
+
+
+#submit {
+    align-items: center;
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(243, 239, 239);
+    background-color: rgb(3, 120, 14);
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    margin-top: 0.6rem;
+}
+
+/**********************************
+*  style for PORTFOLIO page
+***********************************/
+.grid-container-hobby {
+    width: 80%;
+    height: auto;
+        /* set div center horizontally
+            top,bottom: 10px;
+            left,right: automatic justify*/
+        margin: 10px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+        grid-template-columns: 30% 50% 10%;
+    grid-template-rows: 25% 25% 25% 15%;
+    row-gap: 1rem;
+    box-shadow: 2px 2px 10px 1px rgb(124, 120, 120);
+}
+
+.grid-item-hobby {
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-items: center;
+}
+
+.grid-item-hobby:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    justify-content: center;
+}
+
+.grid-item-hobby:nth-child(2) {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-content: left;
+}
+
+.grid-item-hobby:nth-child(3) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    justify-content: center;
+}
+
+.grid-item-hobby:nth-child(4) {
+    grid-row-start: 2;
+    grid-column-start: 2;
+        grid-column-end: 4;
+        justify-content: left;
+}
+
+.grid-item-hobby:nth-child(5) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    justify-content: center;
+}
+
+.grid-item-hobby:nth-child(6) {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-content: left;
+}
+
+.grid-item-hobby:nth-child(7) {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        border-top: 1px solid gray;
+}
+
+.grid-item-hobby>p {
+    width: 400px;
+    align-items: left;
+    justify-content: left;
+    line-height: 130%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/**********************************
+*  style for image & icon
+***********************************/
+/* for round images */
+.img_round {
+    width: 120px;
+        height: 120px;
+    border-radius: 100%;
+}
+/* for square images */
+.img_square {
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    /* border-radius: 100%; */
+}
+
+/* botter icon */
+.image-icon {
+    width: 23px;
+    height: 24px;
+    margin: 1rem;
+}
+
+/**********************************
+*  style for font,size etc
+***********************************/
+h1 {
+    color: purple;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    color: rgb(9, 33, 128);
+    font-family: monospace;
+}
+
+.cv {
+    margin: 0;
+    padding: 0.3rem;
+    background-color: #eee;
+    font: medium 'Fira Sans', sans-serif;
+}
+
+.cv>h1 {
+    justify-content: center;
+}
+
+.cv-part {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    background: right/contain content-box border-box no-repeat url('./icon/seedling-24.png') white;
+    background-size: 36px 36px;
+}
+
+
+.cv-part>h2,
+.cv-part>p {
+    margin: 0.2rem;
+    font-size: small;
+}
